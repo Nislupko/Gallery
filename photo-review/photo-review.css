@@ -17,8 +17,8 @@
 	display: inline-block;
 	/*float: left;
 	*/
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	/*background-color: black;
 	*/
 	padding: 5px;
@@ -32,4 +32,13 @@
 .photo-review img:hover {
 	opacity: 0.5;
 }
-
+.wrapper {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+.wrapper > img {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}

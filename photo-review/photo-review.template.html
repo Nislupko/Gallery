@@ -1,7 +1,10 @@
+<script>
+    $.lazyLoadXT.scrollContainer = '.wrapper';
+</script>
 <div class = "photo-review-navigate-div">
 	<div class="photo-review-navigate-div-container">
-		<div ng-repeat="photo in photoArr" class="photo-review">
-			<img ng-src="{{photo.URL}}" alt="{{photo.Name}}" ng-click="clickPhoto(photo.URL, photo.Name)"></img>
+		<div ng-repeat="photo in photoArr" class="photo-review" class="wrapper">
+			<img data-src="photo-min/{{photo.URL}}" alt="{{photo.Name}}" width="100" height="100" ng-click="clickPhoto(photo.URL, photo.Name)">
 		</div>
 	</div>
 </div>

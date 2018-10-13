@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="add-file-dialog/add-file-dialog.css">
 	<link rel="stylesheet" type="text/css" href="verify-action-dialog/verify-action-dialog.css">
 
+	<script src="node_modules/lazyloadxt/src/jqlight.lazyloadxt.js"></script>
+	<script src="node_modules/lazyloadxt/src/jquery.lazyloadxt.js"></script>
 	<script src="js/angular.min.js"></script>
 	<script src="manage-block/manage-block.module.js"></script>
 	<script src="manage-block/manage-block.component.js"></script>
@@ -33,7 +35,7 @@
 
 <div class="gallery-online-background">
 	<div id="mainImageContainer" class="gallery-online-content-div">
-		<img ng-src="{{mainImageUrl}}" alt="Some test photo">
+		<img ng-src="photo/{{mainImageUrl}}" alt="Some test photo">
 	</div>
 	<manage-block></manage-block>
 	<photo-review></photo-review>
